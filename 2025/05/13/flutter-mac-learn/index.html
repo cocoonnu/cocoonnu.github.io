@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,23 +17,25 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>标签：GASP - cocoon's blog</title>
+  <title>Flutter 开发环境搭建 - cocoon's blog</title>
 
   
-    <meta name="description" content="designed by cocoon | cocoon&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="cocoon&#39;s blog">
-<meta property="og:url" content="http://example.com/tags/GASP/index.html">
+    <meta name="description" content="这篇文章主要记录在 Mac 上搭建 Flutter 开发环境的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flutter 开发环境搭建">
+<meta property="og:url" content="http://example.com/2025/05/13/flutter-mac-learn/index.html">
 <meta property="og:site_name" content="cocoon&#39;s blog">
-<meta property="og:description" content="designed by cocoon | cocoon&#39;s blog">
+<meta property="og:description" content="这篇文章主要记录在 Mac 上搭建 Flutter 开发环境的过程">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-13T02:19:37.304Z">
+<meta property="article:modified_time" content="2025-05-13T03:21:07.231Z">
 <meta property="article:author" content="cocoon">
-<meta property="article:tag" content="cocoon">
+<meta property="article:tag" content="Flutter">
 <meta name="twitter:card" content="summary">
   
   
   
-  <meta name="keywords" content="cocoon">
+  <meta name="keywords" content="Flutter">
 
   <!-- feed -->
   
@@ -50,7 +52,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/assets/avatar.jpeg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">cocoon's blog</div><div class="sub normal cap">designed by cocoon</div><div class="sub hover cap" style="opacity:0"> cocoon's blog</div></a></div></header>
@@ -62,28 +64,132 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item title" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item title" href="/2025/04/29/hexo-learn/"><span class="title">Hexo 个人博客搭建</span></a><a class="item title" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/assets/avatar.jpeg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">cocoon's blog</div><div class="sub normal cap">designed by cocoon</div><div class="sub hover cap" style="opacity:0"> cocoon's blog</div></a></div></header>
-
- 
 
 
 
 
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories">分类</a><a class="active" href="/tags">标签：GASP</a><a href="/archives">归档</a></nav></div>
-<div class="post-list post"><a class="post-card post" href="/2025/05/06/gasp-learn/">
-<article class="md-text"><h2 class="post-title">GASP 动画库学习指南</h2><div class="excerpt"><p>GASP 官方文档：https://gsap.com/，这篇文章会大致介绍一些动画工具的使用</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2025-05-06T09:50:27.291Z">2025-05-06</time></span><span class="cap breadcrumb"><svg style="margin-bottom:1px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6.95c0-.883 0-1.324.07-1.692A4 4 0 0 1 5.257 2.07C5.626 2 6.068 2 6.95 2c.386 0 .58 0 .766.017a4 4 0 0 1 2.18.904c.144.119.28.255.554.529L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .848.352C14.098 6 14.675 6 15.828 6h.374c2.632 0 3.949 0 4.804.77c.079.07.154.145.224.224c.77.855.77 2.172.77 4.804V14c0 3.771 0 5.657-1.172 6.828C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14z" opacity=".5"/><path fill="currentColor" d="M20 6.238c0-.298-.005-.475-.025-.63a3 3 0 0 0-2.583-2.582C17.197 3 16.965 3 16.5 3H9.988c.116.104.247.234.462.45L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .849.352C14.098 6 14.675 6 15.829 6h.373c1.78 0 2.957 0 3.798.238"/><path fill="currentColor" fill-rule="evenodd" d="M12.25 10a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/></svg><span>技术文档</span></span></div></article>
-</a></div>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/">技术文档</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-05-13T02:19:37.304Z">2025-05-13</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-05-13T03:21:07.231Z">2025-05-13</time></span></div></div></div>
+    
+  </div>
+  </div><article class="md-text content"><!-- 使用引用标签作为标题 -->
+
+<div class="tag-plugin quot"><h1 class="content" id="Flutter 开发环境搭建" type="text"><span class="empty"></span><span class="text">Flutter 开发环境搭建</span><span class="empty"></span></h1></div>
+
+<!-- 指定摘要 -->
+
+<p>这篇文章主要记录在 Mac 上搭建 Flutter 开发环境的过程</p>
+<a class="tag-plugin colorful hashtag" color="red" target="_blank" rel="noopener" href="https://docs.flutter.cn/"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>Flutter</span></a>
+<a class="tag-plugin colorful hashtag" color="orange" href="Studio https://developer.android.google.cn/studio?hl=zh-cn"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>Android</span></a>
+<a class="tag-plugin colorful hashtag" color="yellow" target="_blank" rel="noopener" href="https://docs.flutter.cn/get-started/install/macos/mobile-ios"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>Xcode</span></a>
+
+<h2 id="Flutter-SDK"><a href="#Flutter-SDK" class="headerlink" title="Flutter SDK"></a>Flutter SDK</h2><ul>
+<li>先下载 Dart：<code>brew install dart</code></li>
+<li>下载 Flutter SDK，并配置环境变量：本地安装路径：<code>/Users/cocoon/Applications/Flutter，export PATH=$HOME/Applications/Flutter/bin:$PATH</code></li>
+<li>想要切换 SDK 版本只需要进入文件夹切换分支即可，可通过 <code>flutter doctor</code> 查看环境是否都配置成功</li>
+<li>如果没有开梯子则需要设置 Flutter 镜像：<a target="_blank" rel="noopener" href="https://docs.flutter.cn/community/china">https://docs.flutter.cn/community/china</a></li>
+</ul>
+<h2 id="Android-Studio-和-Android-SDK"><a href="#Android-Studio-和-Android-SDK" class="headerlink" title="Android Studio 和 Android SDK"></a>Android Studio 和 Android SDK</h2><ul>
+<li>参考 Flutter 官网安卓开发配置：<a target="_blank" rel="noopener" href="https://flutter.cn/docs/get-started/install/macos/mobile-android?tab=download">https://flutter.cn/docs/get-started/install/macos/mobile-android?tab=download</a></li>
+<li>直接进入官网下载 IDE，进入 IDE 之前会要求你下载 Android SDK：<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio?hl=zh-cn">https://developer.android.google.cn/studio?hl=zh-cn</a></li>
+<li>Android SDK 本地下载地址：<code>/Users/cocoon/Applications/Android</code></li>
+<li>官方除了 SDK 还下载了其他工具，可编辑器进入 <code>设置 - 语言和框架 - Android SDK</code> 中查看</li>
+<li>配置 Android 环境变量（主要用于 adb 命令）：<a target="_blank" rel="noopener" href="https://blog.csdn.net/MirkoWug/article/details/126948260">https://blog.csdn.net/MirkoWug/article/details/126948260</a></li>
+</ul>
+<h2 id="配置-Android-时遇到的问题"><a href="#配置-Android-时遇到的问题" class="headerlink" title="配置 Android 时遇到的问题"></a>配置 Android 时遇到的问题</h2><ul>
+<li>需要获取安卓许可和下载好列表上的安卓模拟器运行工具：<a target="_blank" rel="noopener" href="https://flutter.cn/docs/get-started/install/macos/mobile-android?tab=download#configure-your-target-android-device">https://flutter.cn/docs/get-started/install/macos/mobile-android?tab=download#configure-your-target-android-device</a></li>
+<li>Android Studio 运行项目时卡在 <code>Running gradle assembleDebug</code>：需要外网环境，或者修改 SDK 和项目安卓目录的镜像源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Yyongchao/article/details/136896379">https://blog.csdn.net/Yyongchao/article/details/136896379</a></li>
+</ul>
+<h2 id="Xcode-和-IOS-Simulator"><a href="#Xcode-和-IOS-Simulator" class="headerlink" title="Xcode 和 IOS Simulator"></a>Xcode 和 IOS Simulator</h2><ul>
+<li>参考 Flutter 官网 IOS 开发配置：<a target="_blank" rel="noopener" href="https://docs.flutter.cn/get-started/install/macos/mobile-ios">https://docs.flutter.cn/get-started/install/macos/mobile-ios</a></li>
+<li>下载好 Xcode 和 IOS Simulator 后，通过输入命令 <code>open -a Simulator</code> 运行即可</li>
+<li>依然使用 Android Studio 将 Flutter 项目运行到 IOS Simulator 上面</li>
+</ul>
+<h2 id="Flutter-开发与调试"><a href="#Flutter-开发与调试" class="headerlink" title="Flutter 开发与调试"></a>Flutter 开发与调试</h2><ul>
+<li>和 IDEA 编辑模式一致，编辑之后会自动保存文件，通过 <code>opt + cmd + l</code> 格式化代码</li>
+<li>启动项目后每次修改完文件，可以按 <code>cmd + s</code> 或者手动点击闪电图标进行热更新</li>
+<li>插件 <code>FlutterSnippets</code> 实现代码快捷生成</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">stful -&gt; 生成一个 StatefulWidget</span><br><span class="line">stless -&gt; 生成一个 StatelessWidget</span><br></pre></td></tr></table></figure>
+
+<div class="article-footer fs14">
+    <section id="references">
+      <div class="header"><span>参考资料</span></div>
+      <div class="body">
+        <ul>
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://docs.flutter.cn/">Flutter 开发文档</a></p>
+
+        </li>
+        
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/MirkoWug/article/details/126948260">Mac 上配置 Android 环境变量</a></p>
+
+        </li>
+        
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://docs.flutter.cn/get-started/install/macos/mobile-ios">开始在 macOS 上构建 Flutter iOS 应用</a></p>
+
+        </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2025/05/13/node-development/">Node 前端环境配置</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/05/06/gasp-learn/">GASP 动画库学习指南</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2025/04/29/hexo-learn/" title="Hexo 个人博客搭建"><span class="title">Hexo 个人博客搭建</span><span class="excerpt">Hexo 官网：https://hexo.io/zh-cn/docs/，下面手把手讲一讲初始化搭建过程</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="cocoonnu/hexo-blog-cocoon" data-repo-id="R_kgDOOg-WaA" data-category="Announcements" data-category-id="DIC_kwDOOg-WaM4Cp020" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">cocoon</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Flutter%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">Flutter 开发环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Flutter-SDK"><span class="toc-text">Flutter SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-Studio-%E5%92%8C-Android-SDK"><span class="toc-text">Android Studio 和 Android SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-Android-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">配置 Android 时遇到的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Xcode-%E5%92%8C-IOS-Simulator"><span class="toc-text">Xcode 和 IOS Simulator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Flutter-%E5%BC%80%E5%8F%91%E4%B8%8E%E8%B0%83%E8%AF%95"><span class="toc-text">Flutter 开发与调试</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -405,6 +511,30 @@
 
 
 <!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #giscus');
+  util.viewportLazyload(el, load_discus, false);
+
+  function load_discus() {
+    if (!el) return;
+    try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      const script = document.createElement('script');
+      script.async = true;
+      for (const key of Object.keys(el.attributes)) {
+        const attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+  }
+</script>
+
 
 
 
