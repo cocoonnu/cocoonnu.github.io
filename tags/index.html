@@ -62,7 +62,7 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/23/responsive-learn/"><span class="title">响应式交互方案记录</span></a><a class="item title" href="/2025/05/23/dom-learn/"><span class="title">DOM/BOM 开发笔记</span></a><a class="item title" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item title" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item title" href="/2025/04/29/hexo-learn/"><span class="title">Hexo 个人博客搭建</span></a><a class="item title" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/23/responsive-learn/"><span class="title">响应式交互方案记录</span></a><a class="item title" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item title" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a><a class="item title" href="/2025/04/29/hexo-learn/"><span class="title">Hexo 个人博客搭建</span></a><a class="item title" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item title" href="/2025/05/23/dom-learn/"><span class="title">DOM/BOM 开发笔记</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -74,7 +74,7 @@
   
   
 
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories">分类</a><a class="active" href="/tags">标签</a><a href="/archives">归档</a></nav></div>
+<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories">分类</a><a class="active" href="/tags">标签</a><a href="/topic">专栏</a><a href="/archives">归档</a></nav></div>
   <div class='post-list'>
     <article class='' id='tags'>
       
@@ -432,7 +432,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-eosin.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

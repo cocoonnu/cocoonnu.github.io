@@ -28,7 +28,7 @@
 <meta property="og:description" content="这篇文章主要记录 DOM&#x2F;BOM 相关的开发笔记，包括 DOM 操作、BOM 对象使用等内容">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-23T02:47:34.786Z">
-<meta property="article:modified_time" content="2025-05-23T03:09:26.596Z">
+<meta property="article:modified_time" content="2025-05-23T06:54:17.228Z">
 <meta property="article:author" content="cocoon">
 <meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary">
@@ -64,9 +64,9 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">专栏：技术文档</span></div><div class="widget-body"><a class="item" href="/2025/05/23/responsive-learn/"><span class="title">响应式交互方案记录</span></a><a class="item active" href="/2025/05/23/dom-learn/"><span class="title">DOM/BOM 开发笔记</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a></div></widget>
 
-
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/23/responsive-learn/"><span class="title">响应式交互方案记录</span></a><a class="item title" href="/2025/05/23/dom-learn/"><span class="title">DOM/BOM 开发笔记</span></a><a class="item title" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item title" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item title" href="/2025/04/29/hexo-learn/"><span class="title">Hexo 个人博客搭建</span></a><a class="item title" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/23/responsive-learn/"><span class="title">响应式交互方案记录</span></a><a class="item title" href="/2025/05/13/node-development/"><span class="title">Node 前端环境配置</span></a><a class="item title" href="/2025/05/06/gasp-learn/"><span class="title">GASP 动画库学习指南</span></a><a class="item title" href="/2025/04/29/hexo-learn/"><span class="title">Hexo 个人博客搭建</span></a><a class="item title" href="/2025/05/13/flutter-mac-learn/"><span class="title">Flutter 开发环境搭建</span></a><a class="item title" href="/2025/05/23/dom-learn/"><span class="title">DOM/BOM 开发笔记</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -78,8 +78,8 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/">技术文档</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-05-23T02:47:34.786Z">2025-05-23</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-05-23T03:09:26.596Z">2025-05-23</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/topic">专栏</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/2025/05/23/responsive-learn/">技术文档</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-05-23T02:47:34.786Z">2025-05-23</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-05-23T06:54:17.228Z">2025-05-23</time></span></div></div></div>
     
   </div>
   </div><article class="md-text content"><!-- 使用引用标签作为标题 -->
@@ -597,7 +597,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-eosin.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
